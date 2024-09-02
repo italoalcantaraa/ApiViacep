@@ -34,7 +34,7 @@ public class ServletCep extends HttpServlet {
 		if(endereco == null) {
 			RequestDispatcher dispacher = request.getRequestDispatcher("EnderecoNull.jsp");
 			dispacher.forward(request, response);
-			return;
+			return; 
 		}
 		
 		HttpSession session = request.getSession();
@@ -43,6 +43,5 @@ public class ServletCep extends HttpServlet {
 		RequestDispatcher dispacher = request.getRequestDispatcher("Home.jsp");
 		dispacher.forward(request, response);
 	}
-
 }
 	
